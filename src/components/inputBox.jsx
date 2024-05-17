@@ -20,7 +20,7 @@ const inputBox = (
             </div>
             <div className='w-1/2 flex flex-col justify-end text-right gap-2 p-1'>
               <label htmlFor="" className='inline-block'>{currency}</label>
-              <select name="" id="" className='text-right' onChange={(e)=>onCurrencyChange(e.target.value)}>
+              <select name="" id="" className='text-right' defaultChecked={currency} onChange={(e)=>onCurrencyChange(e.target.value)}>
                 {
                     options.map(
                         (currency)=>{
